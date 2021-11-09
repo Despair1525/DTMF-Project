@@ -41,44 +41,6 @@ hmag3=abs(h3(1:rmag));
 
 
 
-%
-% % 2nd figure
-% axes(handles.fig2);
-% plot(yfilt1);
-% disp();
-% title('Filtered Low Freq. Signal');
-% ylabel('Amplitude');
-% grid;
-% 
-% % 3rd figure
-% axes(handles.fig3);
-% plot(yfilt2);
-% title('Filtered High Freq. Signal');
-% xlabel('Time');
-% ylabel('Amplitude');
-% grid;
-% 
-% % 4th figure
-% hlow=fft(yfilt1,rmain);
-% hmaglow=abs(hlow);
-% 
-% axes(handles.fig4);
-% plot(hmaglow(1:rmag));
-% title('FFT Low Pass');
-% ylabel('Amplitude');
-% grid;
-% 
-% % 5th figure
-% hhigh=fft(yfilt2,rmain);
-% hmaghigh=abs(hhigh);
-% 
-% axes(handles.fig5);
-% plot(hmaghigh(1:rmag));
-% title('FFT High Pass');
-% xlabel('Time');
-% ylabel('Amplitude');
-% %grid;
-
 m=max(abs(hmag2));
 n=max(abs(hmag3));
 o=find(m==hmag2);
